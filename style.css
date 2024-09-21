@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color:white;
+}
+
+body {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 9rem;
+  background: linear-gradient(to right, #feddee, #e0dafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h4 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.hero-section {
+  background-image: url("./bgimg.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  -o-object-fit: fill;
+     object-fit: fill;
+  color: var(--text-color);
+}
+.hero-section p {
+  font-size: 1.1rem;
+  height: auto;
+  line-height: 20px;
+}
+
+.choose .heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 30px auto;
+  text-transform: capitalize;
+}
+.choose .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid pink;
+  width: auto;
+  aspect-ratio: 16/9;
+  padding: 5px;
+  border-radius: 0px;
+}
+.choose .card .icon img {
+  transition: all 0.3s ease-in-out;
+  width: 50px;
+  aspect-ratio: 1;
+  margin: 15px auto;
+}
+.choose .card .icon img:hover {
+  scale: 1.2;
+}
+.choose .card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px auto;
+}
+.choose .card p {
+  padding: 2px 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.product-quality .heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 30px auto;
+  text-transform: capitalize;
+}
+.product-quality .cards {
+  height: auto;
+  margin: 50px auto;
+}
+.product-quality .cards .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.product-quality .cards .title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.product-quality .cards p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 18px;
+}
+
+.contact-now {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background: linear-gradient(to right, #fed2e7, #cdc2fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-now .linear-texts {
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+.contact-now .linear-texts .texts {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(to right, #bc4197 0%, #875397 46%, #5e63a7 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.contact-now .linear-texts a button {
+  background-color: white;
+  color: black;
+  margin-top: 30px;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer {
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.footer .officehour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.footer .officehour img {
+  width: 200px;
+  aspect-ratio: 16/9;
+}
+.footer .officehour p {
+  line-height: 0px;
+  font-size: 1rem;
+}
+.footer .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.footer .nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer .nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+.footer .nav ul li a:hover {
+  color: rgb(203, 80, 100);
+}
+.footer .reach-us {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.footer .reach-us p {
+  font-size: 1rem;
+}
+.footer .contact .label-text {
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 2rem;
+}
+.footer .contact .input-field {
+  width: 100%;
+  padding: 7px 0;
+  outline: none;
+  font-size: 15px;
+}
+.footer .contact .textarea {
+  padding: 25px;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+}
+.footer .contact .send {
+  margin-top: 5px;
+  padding: 3px 19px;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: white;
+  background: blue;
+  border: 0;
+}/*# sourceMappingURL=style.css.map */
